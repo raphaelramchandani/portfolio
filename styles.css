@@ -1,0 +1,19 @@
+* {
+    background-color: #171717;
+}
+
+#menu {
+    height: 44px;
+    background-color: #212121;
+    border: #424242 solid 1px;
+    color: #ECECEC;
+    border-radius: 22px;
+    padding: 0px 20px;
+}
+
+.nav {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
