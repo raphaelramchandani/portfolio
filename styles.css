@@ -1,10 +1,10 @@
 * {
     background-color: #171717;
+    box-sizing: border-box;
 }
 
 body {
     margin: 2%;
-
 }
 
 .menu-button {
@@ -45,8 +45,8 @@ body {
 }
 
 .nav-container.open {
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 96%;
     border-radius: 8px;
     background-color: #ECECEC;
 }
