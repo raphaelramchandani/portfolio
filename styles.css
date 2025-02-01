@@ -2,16 +2,32 @@
     background-color: #171717;
 }
 
-#menu {
-    height: 44px;
-    background-color: #212121;
-    border: #424242 solid 1px;
-    color: #ECECEC;
-    border-radius: 22px;
-    padding: 0px 20px;
+body {
+    margin: 4%;
+    box-sizing: border-box;
 }
 
-.nav {
+.menu-button {
+    height: 44px;
+    background-color: #ECECEC;
+    border: #424242 solid 1px;
+    color: #212121;
+    border-radius: 22px;
+    padding: 0px 20px;
+    
+}
+
+/* When menu is closed */
+.menu {
+    display: none;
+}
+
+/* When menu is open */
+.menu.open {
+    display: flex;
+}
+
+nav {
     height: 100vh;
     display: flex;
     justify-content: center;
