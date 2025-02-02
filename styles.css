@@ -1,52 +1,75 @@
 * {
-    background-color: #171717;
+    background-color: #ECECEC;
     box-sizing: border-box;
 }
 
+/* Default (for larger screens like desktop) */
 body {
-    margin: 2%;
-}
-
-.menu-button {
-    cursor: pointer;
-    height: 44px;
-    width: fit-content;
-    display: inline-block;
-    background-color: #ECECEC;
-    border: #d7d7d7 solid 1px;
-    color: #212121;
-    border-radius: 22px;
-    padding: 0px 20px;
-    margin: 4vh 0vh;
-}
-
-/* When menu is closed */
-.menu-content {
-    display: none;
-}
-
-.nav-container {
-    width: fit-content;
-    height: fit-content;
-    position: fixed;
+    margin: 0px;
+    height: 100vh;
     display: flex;
-    flex-direction: column-reverse;
-    background-color: transparent;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: center;
     align-items: center;
 }
 
 
-/* When menu is open */
-.menu-content.open {
+/* When Menu is closed */
+.nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column-reverse;
+    bottom: 3vh;
+}
+
+.menu-button {
+    margin: 40px;
+    height: 44px;
+    padding: 0px 16px;
+    border-radius: 21px;
+    color: #424242;
+    background-color: white;
+    border: 1.6px solid #e9e9e9;
+}
+
+.menu-button:hover {
+    border: 1.6px solid #cfcfcf;
+}
+
+.menu-container {
+    display: none;
+    font-size: 1rem;
+    color: black;
+}
+
+
+/* When Menu is open */
+.menu-container.open {
     display: block;
 }
 
 .nav-container.open {
-    width: 98%;
-    height: 96%;
+    background-color: white;
+    top: 3vh;
+    bottom: 3vh;
+    left: 3vh;
+    right: 3vh;
     border-radius: 8px;
-    background-color: #ECECEC;
+}
+
+
+/* Tablet-specific styles */
+@media (max-width: 1024px) {
+    body {
+        font-size: 17px;
+    }
+}
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
 }

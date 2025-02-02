@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.getElementById("menu-button");
-    const menuContent = document.getElementById("menu-content");
-    const navContatainer = document.getElementById("nav-container");
+    const menuContainer = document.getElementById("menu-container");
+    const navContainer = document.getElementById("nav-container");
 
     menuButton.addEventListener("click", () => {
-        menuContent.classList.toggle("open");
-        navContatainer.classList.toggle("open");
-        menuButton.textContent = menuContent.classList.contains("open") ? "close" : "menu";
+        menuContainer.classList.toggle("open");
+        navContainer.classList.toggle("open");
+        menuButton.textContent = menuContainer.classList.contains("open") ? "close" : "menu";
     });
 });
