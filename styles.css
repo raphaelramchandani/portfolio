@@ -13,14 +13,15 @@ body {
 }
 
 
-/* When Menu is closed */
-.nav-container {
+/* When Menu is closed and nav-container should be visible */
+.nav-container.visible {
     position: fixed;
     display: flex;
     justify-content: baseline;
     align-items: center;
     flex-direction: column-reverse;
     bottom: 3vh;
+    opacity: 1;
 }
 
 .menu-button {
@@ -31,6 +32,13 @@ body {
     color: #424242;
     background-color: white;
     border: 1.6px solid #e9e9e9;
+}
+
+/* nav-container isnt visible */
+.nav-container {
+    bottom: -100px;
+    opacity: 0;  /* Hidden initially */
+    transition: opacity 0.5s ease, bottom 0.5s ease; 
 }
 
 .menu-button:hover {
