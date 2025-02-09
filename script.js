@@ -8,7 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
         navContainer.classList.toggle("open");
         menuButton.textContent = menuContainer.classList.contains("open") ? "close" : "menu";
     });
-    
+
+    // Ladeanimation
+    window.onload = function () {
+        // Loader ausblenden
+        document.getElementById("loader").style.display = "none";
+
+        // Hauptinhalt sichtbar machen
+        document.getElementById("content").style.display = "block";
+    };
+
+    // Menu animation
     function handleScroll() {
         // Get the scroll position
         const scrollY = window.scrollY;
